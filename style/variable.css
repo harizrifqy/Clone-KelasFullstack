@@ -1,0 +1,45 @@
+:root {
+  /* Colors */
+  --color-primary: rgb(249, 194, 55);
+  --color-secondary: rgb(244, 199, 85);
+  --white: white;
+  --black: black;
+  --bg-navbar: rgb(29, 37, 48);
+  --main-bg: rgb(23, 30, 39);
+
+  /* Font sizes - Simplified responsive */
+  --fs-xs: clamp(0.75rem, 2vw, 0.875rem);
+  /* 12px - 14px */
+  --fs-sm: clamp(0.875rem, 2.2vw, 1rem);
+  /* 14px - 16px */
+  --fs-base: clamp(1rem, 2.5vw, 1.125rem);
+  /* 16px - 18px */
+  --fs-md: clamp(1.125rem, 3vw, 1.5rem);
+  /* 18px - 24px */
+  --fs-lg: clamp(1.5rem, 4vw, 2.25rem);
+  /* 24px - 36px */
+  --fs-xl: clamp(2rem, 5vw, 3rem);
+  /* 32px - 48px */
+  --fs-2xl: clamp(2.5rem, 6vw, 3.75rem);
+  /* 40px - 60px */
+  --fs-3xl: clamp(3rem, 8vw, 4.5rem);
+  /* 48px - 72px */
+
+  /* Spacing scale (margin/padding/gap) */
+  --space-xs: clamp(0.5rem, 0.8vw, 0.75rem);
+  --space-sm: clamp(1rem, 1.2vw, 1.25rem);
+  --space-md: clamp(1.5rem, 2vw, 2rem);
+  --space-lg: clamp(2rem, 3vw, 3rem);
+  --space-xl: clamp(3rem, 4.5vw, 4.5rem);
+  --space-2xl: clamp(4rem, 6vw, 6rem);
+  --space-3xl: clamp(5rem, 8vw, 8rem);
+
+  /* Container widths */
+  --max-container: 1200px;
+  --max-container-wide: 1440px;
+
+  /* Width Logo Brand */
+  --width-logo-mobile: 12rem;
+  --width-logo-tablet: 13rem;
+  --width-logo-desktop: 15rem;
+}
