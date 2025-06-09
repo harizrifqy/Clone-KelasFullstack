@@ -1,0 +1,67 @@
+html,
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.5;
+  color: var(--white);
+}
+
+body {
+  min-height: 100vh;
+  color: var(--black);
+  padding-bottom: 10rem;
+  font-size: var(--fs-base);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-xl);
+}
+
+
+.payment_wrapper {
+  padding: var(--space-md) var(--space-md) var(--space-xs);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+.payment_title {
+  font-size: var(--fs-xl);
+  margin-top: var(--space-md);
+}
+
+
+.info_customer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.info_customer-title {
+  font-size: var(--fs-md);
+}
+
+.info_customer span {color: gray;}
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.input_email,
+.input_name,
+.input_voucher-disc {
+  padding: 0.65rem;
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 0.25rem;
+  font-size: var(--fs-base);
+}
+
+summary {
+  font-weight: 700;
+  color: gray;
+}
+
