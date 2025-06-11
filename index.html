@@ -33,7 +33,7 @@
         <!-- Navigation Menu -->
         <ul class="navbar-link">
           <!-- Lihat Isi Materi -->
-          <li><a class="btn silabus-navbar" href="#" aria-label="Lihat Materi yang ada diKelasFullstack">Lihat
+          <li><a class="btn silabus-navbar" href="#materi" aria-label="Lihat Materi yang ada diKelasFullstack">Lihat
               Kurikulum</a></li>
           <!-- Button Login Member -->
           <li><a class="btn login" href="#" aria-label="Login ke halaman member"><svg xmlns="http://www.w3.org/2000/svg"
@@ -44,7 +44,7 @@
                 <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4" />
               </svg>Login Member</a></li>
           <!-- Button Gabung Program -->
-          <li><a class="btn join" href="" aria-label="Gabung ke program KelasFullstack"><svg
+          <li><a class="btn join" href="payment.html" aria-label="Gabung ke program KelasFullstack"><svg
                 xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                 class="lucide lucide-user-round-plus-icon lucide-user-round-plus">
@@ -61,7 +61,7 @@
       <section class="hero-section">
         <!-- Content Hero Section -->
         <article class="left-section">
-          <h1 class="title-hero">Jalan Lurus Jadi <span>Fullstack Web Developer</span></h1>
+          <h1 class="title-hero">Jalan Lurus Jadi <span class="highlight_title-section">Fullstack Web Developer</span></h1>
           <div class="description-hero">
             <p>Kelas online belajar Fullstack web developer from A to Z. Cocok buat yang pengen punya karir bagus,
               skill dibutuhin industri, gaji tinggi dan bisa bikin web atau aplikasi buat ngembangin bisnis online
@@ -74,7 +74,7 @@
           <!-- Jumlah members -->
           <span class="total-members">2000+ orang udah belajar di sini.</span>
           <ul class="cta-button">
-            <li><a href="#" class="btn join-hero" aria-label="Gabung ke Program KelasFullstack"><svg
+            <li><a class="btn join-hero" href="payment.html" aria-label="Gabung ke Program KelasFullstack"><svg
                   xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                   class="lucide lucide-user-round-plus-icon lucide-user-round-plus">
@@ -83,7 +83,7 @@
                   <path d="M19 16v6" />
                   <path d="M22 19h-6" />
                 </svg>Gabung Program</a></li>
-            <li><a href="#" class="btn silabus-hero" aria-label="Lihat Materi yang ada diKelasFullstack"><svg
+            <li><a href="#materi" class="btn silabus-hero" aria-label="Lihat Materi yang ada diKelasFullstack"><svg
                   xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                   class="lucide lucide-list-todo-icon lucide-list-todo">
@@ -126,7 +126,7 @@
 
       <!-- Yuk Gabung di KelasFullstack -->
       <section class="wrapper-cta">
-        <h2 class="title cta">Yuk Gabung di <span class="highlight-title-cta">KelasFullstack.id</span></h2>
+        <h2 class="title-section">Yuk Gabung di <span class="highlight_title-section">KelasFullstack.id</span></h2>
         <!-- Berbagai Materi yang didapat dari KelasFullstack -->
         <article class="description-materi">
           <img src="img/img-dashboard-2.webp" alt="Lifetime Access Class Features Image" class="img-dashboard-2"
@@ -141,13 +141,13 @@
               <li>72 Modul</li>
               <li>1x Bayar, Akses + Update Materi Seumur Hidup</li>
             </ul>
-            <button class="btn video-explanation">
+            <a class="btn video-explanation" href="https://www.youtube.com/watch?v=NRsKjqR_5GU" aria-label="Tonton Penjelasa Materi yang ada pada Program KelasFullstack">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                 class="lucide lucide-circle-play-icon lucide-circle-play">
                 <circle cx="12" cy="12" r="10" />
                 <polygon points="10 8 16 12 10 16 10 8" />
-              </svg>Tonton Penjelasan Materi</button>
+              </svg>Tonton Penjelasan Materi</a>
           </div>
         </article>
 
@@ -198,7 +198,7 @@
         <img src="img/img-certificate.webp"
           alt="Images of learning facilities obtained when becoming a Fullstack Class member" class="img-certification"
           loading="lazy">
-        <h2 class="title-learning-facilities"><span>Fasilitas</span> Belajar</h2>
+        <h2 class="title-section"><span class="highlight_title-section">Fasilitas</span> Belajar</h2>
         <h3>Yang akan kamu dapatkan saat kamu gabung dalam program ini</h3>
       </div>
       <ul class="facilities-list">
@@ -248,9 +248,9 @@
     </section>
 
     <!-- Materi Belajar -->
-    <section class="study-materials">
+    <section class="study-materials" id="materi">
       <div class="study-materials_header">
-        <h2 class="study-materials_title">Materi <span>Belajar</span></h2>
+        <h2 class="title-section">Materi <span class="highlight_title-section">Belajar</span></h2>
         <p class="study-materials_description">Intip rangkaian materi belajar yang akan kamu pelajari di program ini:</p>
         <img class="study-materials_img" src="/img/img-materi.webp" alt="">
       </div>
@@ -303,7 +303,7 @@
     <!-- Project Belajar -->
     <section class="learning-project">
       <article class="learning-project_header">
-        <h2 class="learning-project_title">Project <span>Belajar</span></h2>
+        <h2 class="title-section">Project <span class="highlight_title-section">Belajar</span></h2>
         <p class="learning-project_description">Setelah menyelesaikan semua materi belajar di program ini, kamu akan bisa membuat project:</p>
       </article>
       
@@ -376,7 +376,7 @@
 
     <!-- Untungnya jadi Fullstack Developer -->
     <section class="benefit-fullstack">
-      <h2 class="title-benefit">Apa Untungnya Jadi <span class="highlight-benefit">Fullstack Developer</span></h2>
+      <h2 class="title-section">Apa Untungnya Jadi <span class="highlight_title-section">Fullstack Developer</span></h2>
       <article class="benefit">
         <div class="sallary">
           <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none"
@@ -433,10 +433,10 @@
           class="img-card-economical" loading="lazy">
       </div>
       <div class="mid-section">
-        <span class="price-normal">Rp.2.200.000</span>
-        <h2 class="price-discount">Rp. 880.000</h2>
+        <h2 class="price-normal">Rp.2.200.000</span>
+        <h3 class="price-discount">Rp. 880.000</h3>
         <span>Bundling semua kelas</span>
-        <a class="btn join-card" href="#" aria-label="Gabung ke Program KelasFullstack">Gabung Program</a>
+        <a class="btn join-card" href="payment.html" aria-label="Gabung ke Program KelasFullstack">Gabung Program</a>
         <p class="materi">Kamu akan mendapatkan semua materi kelas dari semua roadmap lengkap dari program
           KelasFullstack ini dengan harga yang super hemat!</p>
       </div>

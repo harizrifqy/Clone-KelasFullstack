@@ -1,29 +1,29 @@
 html,
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  line-height: 1.5;
+  line-height: 2;
   color: var(--white);
+  scroll-behavior: smooth;
 }
 
 body {
   min-height: 100vh;
   color: var(--black);
-  padding-bottom: 10rem;
   font-size: var(--fs-base);
 }
 
 .container {
   display: grid;
   grid-template-columns: 1fr;
-  gap: var(--space-xl);
+  gap: var(--space-md);
 }
 
 
-.payment_wrapper {
+.info_customer {
   padding: var(--space-md) var(--space-md) var(--space-xs);
   display: flex;
   flex-direction: column;
-  gap: var(--space-xl);
+  gap: var(--space-lg);
 }
 
 .payment_title {
@@ -31,8 +31,8 @@ body {
   margin-top: var(--space-md);
 }
 
-
-.info_customer {
+.customer,
+.form {
   display: flex;
   flex-direction: column;
   gap: var(--space-xs);
@@ -42,18 +42,15 @@ body {
   font-size: var(--fs-md);
 }
 
-.info_customer span {color: gray;}
-
-
-.form {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-xs);
+.info_customer span {
+  color: gray;
 }
+
 
 .input_email,
 .input_name,
-.input_voucher-disc {
+.input_voucher-disc,
+.coupon_input {
   padding: 0.65rem;
   border: 1px solid rgb(221, 221, 221);
   border-radius: 0.25rem;
@@ -65,3 +62,144 @@ summary {
   color: gray;
 }
 
+
+.checkout {
+  width: 100%;
+  background-color: var(--color-bg-payment);
+  display: grid;
+  grid-template-columns: minmax(3.125rem, 6.25rem) minmax(6.25rem, 1fr);
+  gap: var(--space-md);
+  padding: var(--space-xl) var(--space-md);
+  margin-top: var(--space-xl);
+  border-top: 2px solid rgb(223, 223, 223);
+}
+
+.img_checkout {
+  max-width: 100%;
+  border-radius: 0.5rem;
+}
+
+.title_checkout {
+  font-size: var(--fs-lg);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.header_checkout {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+}
+
+.badge_pilihan-terbaik {
+  font-size: var(--fs-base);
+  color: var(--white);
+  font-weight: 600;
+  background-color: var(--bg-btn-payment);
+  padding: 0 var(--space-xs);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  max-width: 10rem;
+  height: 1.75rem;
+  white-space: nowrap;
+}
+
+.content_checkout {
+  display: flex;
+  flex-direction: column;
+}
+
+.info_materi,
+.type_checkout {
+  color: gray;
+}
+
+
+.coupon_section,
+.price_section {
+  grid-column: span 2;
+  border-top: 2px solid rgb(223, 223, 223);
+  border-bottom: 2px solid rgb(223, 223, 223);
+  padding: var(--space-md) 0;
+}
+
+
+.coupon_container {
+  display: flex;
+  gap: var(--space-sm);
+}
+
+.coupon_input {
+  flex: 1;
+  padding: 0.65rem var(--space-xs);
+  font-size: var(--fs-base);
+  border: 1px solid rgb(223, 223, 223);
+  border-radius: 0.25rem;
+}
+
+.coupon_button {
+  background-color: var(--bg-btn-payment);
+  border: none;
+  color: var(--white);
+  border-radius: 0.25rem;
+  font-size: var(--fs-base);
+  padding: var(--space-xs);
+}
+
+.coupon_button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+
+.price_section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  border-bottom: 0;
+  border-top: 0;
+}
+
+.price_container {
+  border-bottom: 2px solid rgb(223, 223, 223);
+  padding-bottom: var(--space-md);
+}
+
+.total-price_container {
+  border-bottom: 0;
+}
+
+.price_container p,
+.total-price_container p {
+  display: flex;
+  justify-content: space-between;
+  color: gray;
+}
+
+
+.btn.checkout {
+  color: var(--white);
+  background-color: var(--bg-btn-payment);
+  font-size: var(--fs-md);
+  padding: var(--space-xs);
+  display: flex;
+  justify-content: center;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.3s ease, transform 0.3s ease-out;
+}
+
+.btn.checkout:hover,
+.coupon_button:hover {
+  transform: scale(1.015);
+  opacity: 0.75;
+}
+
+.btn.checkout:active,
+.coupon_button:active {
+  opacity: 0.5;
+}

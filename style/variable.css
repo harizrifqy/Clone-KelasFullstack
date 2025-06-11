@@ -3,6 +3,7 @@
   --color-primary: rgb(249, 194, 55);
   --color-secondary: rgb(244, 199, 85);
   --color-bg-payment: rgb(248, 248, 248);
+  --bg-btn-payment: rgb(7, 166, 161);
   --white: white;
   --black: black;
   --bg-navbar: rgb(29, 37, 48);
@@ -27,7 +28,7 @@
   /* 48px - 72px */
 
   /* Spacing scale (margin/padding/gap) */
-  --space-xs: clamp(0.6rem, 0.8vw, 0.85rem);
+  --space-xs: clamp(0.5rem, 0.7vw, 0.7rem);
   --space-sm: clamp(1rem, 1.2vw, 1.25rem);
   --space-md: clamp(1.5rem, 2vw, 2rem);
   --space-lg: clamp(2rem, 3vw, 3rem);
@@ -37,7 +38,6 @@
 
   /* Container widths */
   --max-container: 1200px;
-  --max-container-wide: 1440px;
 
   /* Width Logo Brand */
   --width-logo-mobile: 12rem;
