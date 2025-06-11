@@ -4,6 +4,7 @@ body {
   line-height: 2;
   color: var(--white);
   scroll-behavior: smooth;
+  font-weight: 500;
 }
 
 body {
@@ -42,25 +43,30 @@ body {
   font-size: var(--fs-md);
 }
 
-.info_customer span {
-  color: gray;
-}
-
-
 .input_email,
 .input_name,
+.input_phone,
 .input_voucher-disc,
 .coupon_input {
   padding: 0.65rem;
   border: 1px solid rgb(221, 221, 221);
-  border-radius: 0.25rem;
+  border-radius: var(--border-xs);
   font-size: var(--fs-base);
 }
 
-summary {
+.note h3 {
   font-weight: 700;
-  color: gray;
 }
+
+.info_customer span,
+.note p,
+.note h3,
+.info_materi,
+.type_checkout {
+  color: var(--color-content);
+}
+
+
 
 
 .checkout {
@@ -76,7 +82,7 @@ summary {
 
 .img_checkout {
   max-width: 100%;
-  border-radius: 0.5rem;
+  border-radius: var(--border-sm);
 }
 
 .title_checkout {
@@ -98,7 +104,7 @@ summary {
   font-weight: 600;
   background-color: var(--bg-btn-payment);
   padding: 0 var(--space-xs);
-  border-radius: 1rem;
+  border-radius: var(--border-lg);
   display: flex;
   align-items: center;
   gap: var(--space-xs);
@@ -111,12 +117,6 @@ summary {
   display: flex;
   flex-direction: column;
 }
-
-.info_materi,
-.type_checkout {
-  color: gray;
-}
-
 
 .coupon_section,
 .price_section {
@@ -134,19 +134,19 @@ summary {
 
 .coupon_input {
   flex: 1;
-  padding: 0.65rem var(--space-xs);
+  padding: 0.65rem var(--space-sm);
   font-size: var(--fs-base);
   border: 1px solid rgb(223, 223, 223);
-  border-radius: 0.25rem;
+  border-radius: var(--border-xs);
 }
 
 .coupon_button {
   background-color: var(--bg-btn-payment);
   border: none;
   color: var(--white);
-  border-radius: 0.25rem;
+  border-radius: var(--border-xs);
   font-size: var(--fs-base);
-  padding: var(--space-xs);
+  padding: 0.65rem var(--space-xs);
 }
 
 .coupon_button:disabled {
@@ -176,7 +176,7 @@ summary {
 .total-price_container p {
   display: flex;
   justify-content: space-between;
-  color: gray;
+  color: var(--color-content);
 }
 
 
@@ -187,7 +187,7 @@ summary {
   padding: var(--space-xs);
   display: flex;
   justify-content: center;
-  border-radius: 0.5rem;
+  border-radius: var(--border-sm);
   border: none;
   cursor: pointer;
   transition: opacity 0.3s ease, transform 0.3s ease-out;

@@ -2,6 +2,7 @@
   /* Colors */
   --color-primary: rgb(249, 194, 55);
   --color-secondary: rgb(244, 199, 85);
+  --color-content: #495057;
   --color-bg-payment: rgb(248, 248, 248);
   --bg-btn-payment: rgb(7, 166, 161);
   --white: white;
@@ -43,4 +44,10 @@
   --width-logo-mobile: 12rem;
   --width-logo-tablet: 13rem;
   --width-logo-desktop: 15rem;
+
+  /* Border Radius */
+  --border-xs: 0.25rem;
+  --border-sm: 0.5rem;
+  --border-md: 0.75rem;
+  --border-lg: 1rem;
 }
