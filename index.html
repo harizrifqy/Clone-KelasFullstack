@@ -4,10 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description"
-    content="Belajar jadi Fullstack Web Developer dari nol bareng KelasFullstack. Cocok untuk pemula!">
+  <meta name="description" content="Belajar jadi Fullstack Web Developer dari nol bareng KelasFullstack. Cocok untuk pemula!">
+  <meta name="keywords" content="Belajar Coding, Frontend, Backend, KelasFullstack, fullstack, web development, codepolitan">
   <meta property="og:title" content="Kelas Fullstack - Belajar Jadi Web Developer dari Nol">
-  <meta property="og:image" content="URL-GAMBAR-PREVIEW">
+  <meta property="og:description" content="Platform belajar pemrograman secara online dengan berbahasa Indonesia yang dikembangkan khusus untuk membantu generasi muda belajar dan berlatih pemrograman agar kompetitif di era Industri 4.0.">
+  <meta property="og:type" content="website">
   <title>Clone KelasFullstack</title>
   <link rel="stylesheet" href="style/reset.css">
   <link rel="stylesheet" href="style/variable.css">
@@ -33,7 +34,7 @@
         <!-- Navigation Menu -->
         <ul class="navbar_link">
           <!-- Lihat Isi Materi -->
-          <li><a class="btn silabus-navbar" href="/materi" aria-label="Lihat Materi yang ada diKelasFullstack">Lihat
+          <li><a class="btn silabus-navbar" href="#materi_belajar" aria-label="Lihat Materi yang ada diKelasFullstack">Lihat
               Kurikulum</a></li>
           <!-- Button Login Member -->
           <li><a class="btn login" href="login_form.html" aria-label="Login ke halaman member"><svg xmlns="http://www.w3.org/2000/svg"
@@ -83,7 +84,7 @@
                   <path d="M19 16v6" />
                   <path d="M22 19h-6" />
                 </svg>Gabung Program</a></li>
-            <li><a href="/materi" class="btn silabus-hero" aria-label="Lihat Materi yang ada diKelasFullstack"><svg 
+            <li><a class="btn silabus-hero" href="#materi_belajar" aria-label="Lihat Materi yang ada diKelasFullstack"><svg 
                   xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                   class="lucide lucide-list-todo-icon lucide-list-todo">
@@ -248,7 +249,7 @@
     </section>
 
     <!-- Materi Belajar -->
-    <section class="study-materials" id="materi">
+    <section class="study-materials" id="materi_belajar">
       <div class="study-materials_header">
         <h2 class="title-section">Materi <span class="highlight_title-section">Belajar</span></h2>
         <p class="study-materials_description">Intip rangkaian materi belajar yang akan kamu pelajari di program ini:</p>
@@ -497,7 +498,7 @@
     navToggle.addEventListener('click', () => {
       navToggle.classList.toggle('active');
       navMenu.classList.toggle('active');
-    })
+    });
   </script>
 </body>
 </html>

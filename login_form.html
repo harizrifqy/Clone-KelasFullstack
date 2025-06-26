@@ -6,17 +6,11 @@
   <!-- SEO Meta -->
   <meta name="description" content="Masuk ke akun Codepolitan Anda. Platform pembelajaran programming terpercaya dengan ribuan tutorial dan komunitas developer Indonesia.">
   <meta name="keywords" content="login codepolitan, masuk codepolitan, belajar programming, coding indonesia">
-  <meta name="author" content="Tim Codepolitan">
-  <meta name="robots" content="noindex, nofollow">
-  <meta name="theme-color" content="#007bff">
-  <!-- Open Graph -->
+
   <meta property="og:title" content="Login - Codepolitan">
   <meta property="og:description" content="Masuk ke Codepolitan - Platform pembelajaran programming terbaik Indonesia">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://codepolitan.com/login">
-  <meta property="og:image" content="https://codepolitan.com/img/og-image.jpg">
-  <!-- Security -->
-  <meta http-equiv="X-Frame-Options" content="DENY">
+
   <title>Masuk - Codepolitan</title>
   <link rel="stylesheet" href="style/reset.css">
   <link rel="stylesheet" href="style/variable.css">
@@ -24,6 +18,25 @@
 </head>
 <body>
   <div class="container">
+    <nav class="navbar">
+      <section class="navbar_container">
+        <div class="navbar_logo_wrapper">
+          <img class="navbar_logo" src="img/icon-codepolitan.png" alt="Logo Codepolitan - Platform belajar pemrograman secara online" loading="lazy">
+        </div>
+
+        <button class="navbar_toggle" aria-label="Toggle navigation menu"aria-expanded="false"aria-controls="navbar_link">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+
+        <ul class="navbar_link">
+            <li><a class="btn masuk" href="">Masuk</a></li>
+            <li><a class="btn daftar" href="">Daftar</a></li>
+        </ul>
+        </nav>
+      </section>
+    </nav>
     <main class="login">
       <section class="login_wrapper">
         <h1 class="login_title">Masuk</h1>
@@ -39,7 +52,7 @@
                   <rect x="2" y="4" width="20" height="16" rx="2" />
                 </svg>
               </span>
-              <input class="login_input-email" type="email" name="email" placeholder="Email">
+              <input class="login_input-email" type="email" name="email" placeholder="Email" aria-label="Email Address">
             </div>
           </div>
 
@@ -54,28 +67,22 @@
                   <path d="M7 11V7a5 5 0 0 1 10 0v4" />
                 </svg>
               </span>
-              <input class="login_input-password" type="password" name="password" placeholder="Password">
+              <input class="login_input-password" type="password" name="password" placeholder="Password" aria-label="Password Email">
             </div>
           </div>
 
           <button class="login_button" type="submit">Masuk</button>
         </form>
 
-        <div class="horizontal-divider">
-          <hr class="line">
-          <span class="opsi_login">atau</span>
-          <hr class="line">
-        </div>
-
         <div class="login_grup">
           <a href="#" class="button_login-google"><svg width="18" role="img" viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg">
+              xmlns="http://www.w3.org/2000/svg" aria-label="Login with Google">
               <title>Google</title>
               <path
                 d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z" />
             </svg>Masuk dengan Google</a>
           <a href="#" class="button_login-github"><svg fill="Currentcolor" width="18" role="img" viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg">
+              xmlns="http://www.w3.org/2000/svg" aria-label="Login with Github">
               <title>GitHub</title>
               <path
                 d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
@@ -83,13 +90,13 @@
         </div>
 
         <div class="auth-links">
-          <a class="auth-links_password" href="/forgot-password">Lupa Password</a>
-          <a class="auth-links_daftar" href="/register">Belum punya akun? Daftar</a>
+          <a class="auth-links_password" href="/forgot-password" aria-label="Forgot Password">Lupa Password</a>
+          <a class="auth-links_daftar" href="/register" aria-label="Daftar Account">Belum punya akun? Daftar</a>
         </div>
       </section>
     </main>
   </div>
-  <footer class="footer" r>
+  <footer class="footer">
     <section class="footer_container">
       <img class="footer_logo" src="img/codepolitan-logo.png"
         alt="Logo Brand platform belajar pemrograman secara online dengan berbahasa Indonesia" loading="lazy">
@@ -130,7 +137,7 @@
     </section>
     <article class="footer_copyright">
       <p class="copyright">&copy; 2025 CODEPOLITAN. All rights reserved. Made with ❤️ in Indonesia. <a
-          class="btn system-status" href="https://codepolitan-status.statuspage.io/">System status</a></p>
+          class="btn system-status" href="https://codepolitan-status.statuspage.io/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-icon lucide-circle"><circle cx="12" cy="12" r="10"/></svg>System status</a></p>
       <div class="icons_wrapper">
         <svg role="img" width="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <title>TikTok</title>
@@ -164,5 +171,14 @@
       </div>
     </article>
   </footer>
+  <script>
+    const navToggle = document.querySelector('.navbar_toggle');
+    const navMenu = document.querySelector('.navbar_link');
+
+    navToggle.addEventListener('click', () => {
+      navToggle.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    })
+  </script>
 </body>
 </html>
