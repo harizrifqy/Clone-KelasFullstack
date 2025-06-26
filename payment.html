@@ -84,21 +84,21 @@
     </section>
   </main>
   <script>
-  const kuponInput = document.querySelector('.coupon_input');
-  const submitBtn = document.querySelector('.coupon_button');
+    const kuponInput = document.querySelector('.coupon_input');
+    const submitBtn = document.querySelector('.coupon_button');
 
-  window.addEventListener('DOMContentLoaded', () => {
-    kuponInput.value = 'KELASFULLSTACK';
-    submitBtn.disabled = false;
-  });
+      window.addEventListener('DOMContentLoaded', () => {
+        kuponInput.value = 'KELASFULLSTACK';
+        submitBtn.disabled = false;
+      });
 
-  kuponInput.addEventListener('input', () => {
-    if (kuponInput.value.trim() === '') {
-      submitBtn.disabled = true;
-    } else {
-      submitBtn.disabled = false;
-    }
-  });
-</script>
+      kuponInput.addEventListener('input', () => {
+        if (kuponInput.value.trim() === '') {
+          submitBtn.disabled = true;
+        } else {
+          submitBtn.disabled = false;
+        }
+      });
+  </script>
 </body>
 </html>

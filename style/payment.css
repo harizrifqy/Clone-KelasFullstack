@@ -46,12 +46,15 @@ body {
 .input_email,
 .input_name,
 .input_phone,
-.input_voucher-disc,
 .coupon_input {
   padding: 0.65rem;
   border: 1px solid rgb(221, 221, 221);
   border-radius: var(--border-xs);
   font-size: var(--fs-base);
+}
+
+input:focus {
+  outline: 2px solid var(--bg-btn-payment); /* ganti warna sesuai keinginan */
 }
 
 .note h3 {
@@ -184,7 +187,7 @@ body {
   color: var(--white);
   background-color: var(--bg-btn-payment);
   font-size: var(--fs-md);
-  padding: var(--space-xs);
+  padding: var(--space-sm);
   display: flex;
   justify-content: center;
   border-radius: var(--border-sm);

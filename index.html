@@ -17,26 +17,26 @@
 <body>
   <div class="container">
     <nav class="navbar">
-      <section class="navbar-wrapper">
+      <section class="navbar_wrapper">
         <!-- Brand / Logo -->
         <div class="navbar_logo-brand">
           <img src="img/fullstack-logo.webp" alt="Logo Kelas Fullstack - Belajar Web Developer dari Nol"
             class="navbar_brand" loading="lazy">
         </div>
         <!-- Hamburger menu -->
-        <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false"
-          aria-controls="navbar-link">
+        <button class="navbar_toggle" aria-label="Toggle navigation menu" aria-expanded="false"
+          aria-controls="navbar_link">
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
         </button>
         <!-- Navigation Menu -->
-        <ul class="navbar-link">
+        <ul class="navbar_link">
           <!-- Lihat Isi Materi -->
           <li><a class="btn silabus-navbar" href="/materi" aria-label="Lihat Materi yang ada diKelasFullstack">Lihat
               Kurikulum</a></li>
           <!-- Button Login Member -->
-          <li><a class="btn login" href="/login" aria-label="Login ke halaman member"><svg xmlns="http://www.w3.org/2000/svg"
+          <li><a class="btn login" href="login_form.html" aria-label="Login ke halaman member"><svg xmlns="http://www.w3.org/2000/svg"
                 width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                 stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-log-in-icon lucide-log-in">
                 <path d="m10 17 5-5-5-5" />
@@ -490,6 +490,14 @@
       </div>
     </div>
   </footer>
-  <script src="js/main.js"></script>
+  <script>
+    const navToggle = document.querySelector('.navbar_toggle');
+    const navMenu = document.querySelector('.navbar_link');
+
+    navToggle.addEventListener('click', () => {
+      navToggle.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    })
+  </script>
 </body>
 </html>
